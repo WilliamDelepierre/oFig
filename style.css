@@ -32,6 +32,7 @@ header p span {
 }
 
 main {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -115,6 +116,26 @@ article p {
   color: whitesmoke;
   font-size: 1.4rem;
   font-weight: bold;
+}
+.label {
+  position: absolute;
+  top: 27%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c80000;
+  height: 110px;
+  width: 30px;
+  border-radius: 0 5px 5px 0;
+}
+
+.label span {
+  color: whitesmoke;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 footer {
