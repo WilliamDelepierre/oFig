@@ -149,9 +149,15 @@ article p {
   text-transform: uppercase;
 }
 
-footer {
+footer p {
   background-color: #666;
   color: whitesmoke;
   text-align: center;
-  padding-bottom: 15px;
+  padding: 2px 0 15px 0;
+}
+
+.deco {
+  padding-bottom: 2px;
+  height: 10px;
+  background-image: url(/images/deco.png);
 }
