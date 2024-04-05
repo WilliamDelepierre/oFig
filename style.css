@@ -58,6 +58,10 @@ article {
   padding: 5px;
 }
 
+article:hover {
+  box-shadow: #666 0px 3px 8px;
+}
+
 figure img {
   width: 100%;
 }
