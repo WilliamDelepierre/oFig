@@ -14,6 +14,12 @@ body {
   font-family: "Raleway";
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 header h1 {
   background-color: #c80000;
   color: whitesmoke;
@@ -139,15 +145,19 @@ article p {
   position: fixed;
   top: 40%;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #c80000;
   height: 110px;
   width: 30px;
+  padding-left: 10px;
   border-radius: 0 5px 5px 0;
   color: whitesmoke;
+  text-align: center;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  z-index: 1;
+}
+
+.label span {
   font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
