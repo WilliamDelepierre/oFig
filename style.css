@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: "Raleway";
+  min-height: 100vh;
 }
 
 header {
@@ -228,9 +229,15 @@ article:hover .cercle {
   font-weight: bold;
   text-transform: uppercase;
 }
+footer {
+  background-color: #666;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
 
 footer p {
-  background-color: #666;
   color: whitesmoke;
   text-align: center;
   padding: 2px 0 15px 0;
