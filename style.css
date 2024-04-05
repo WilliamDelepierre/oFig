@@ -88,14 +88,21 @@ article p {
   max-height: 18px;
 }
 
+.panier a {
+  color: whitesmoke;
+}
+
+.panier:hover {
+  background-color: grey;
+}
+
 .prix {
   font-weight: bold;
 }
 
 .old-prix {
   text-decoration: line-through;
-  font-weight: 200;
-  margin-right: 2px;
+  margin-left: 20px;
 }
 
 .cercle {
