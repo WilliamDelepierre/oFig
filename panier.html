@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oFig Panier</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="titre">
+        <div class="typing">
+          <a href="index.html"><h1>oFig</h1></a>
+        </div>
+        <span class="span-h1">Figurines et statuettes</span>
+      </div>
+      <h2>Votre panier <span>2 produits</span></h2>
+    </header>
+    <div class="label">
+      <span>soldes</span>
+    </div>
+    <main class="main_panier">
+      <h3 class="panier_title">Votre panier</h3>
+      <table class="tableau_panier">
+        <thead>
+          <tr>
+            <th>Figurine</th>
+            <th>Prix unitaire</th>
+            <th>Quantité</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cloud Strife</td>
+            <td>59 €</td>
+            <td>
+              <input
+                type="number"
+                name="quantite"
+                id="quantite"
+                value="1"
+                min="0"
+              />
+              <label for="quantite">suppimer</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Tifa Lockhart</td>
+            <td>69 €</td>
+            <td>
+              <input
+                type="number"
+                name="quantite"
+                id="quantite"
+                value="1"
+                min="0"
+              />
+              <label for="quantite">suppimer</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Barret Wallace</td>
+            <td>69 €</td>
+            <td>
+              <input
+                type="number"
+                name="quantite"
+                id="quantite"
+                value="1"
+                min="0"
+              />
+              <label for="quantite">suppimer</label>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total de la commande</td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="formulaire">
+        <h3 class="formulaire_title">Préférences de livraison</h3>
+        <form>
+          <div class="partie_gauche">
+            <fieldset>
+              <legend>Où souhaitez-vous être livré ?</legend>
+              <div class="input">
+                <input
+                  type="radio"
+                  name="livraison"
+                  id="livraison1"
+                  checked
+                /><label for="livraison1">Mon adresse courante</label>
+              </div>
+              <div class="input">
+                <input type="radio" name="livraison" id="livraison2" /><label
+                  for="livraison2"
+                  >Autre adresse</label
+                >
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Options</legend>
+              <div class="input">
+                <input type="checkbox" name="option" id="option1" checked />
+                <label for="option1">Suivi de livraison par sms (inclus)</label>
+              </div>
+              <div class="input">
+                <input type="checkbox" name="option" id="option2" />
+                <label for="option2">Satisfait ou remboursé (+ 2 euros)</label>
+              </div>
+              <div class="input">
+                <input type="checkbox" name="option" id="option3" />
+                <label for="option3">Garantie 2 ans (+ 10 euros)</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="partie_droite">
+            <fieldset>
+              <legend>Adresse</legend>
+              <label for="rue">Rue</label>
+              <input type="text" name="rue" id="rue" required />
+              <label for="cp">Code postal</label>
+              <input type="text" name="cp" id="cp" required />
+              <label for="ville">Ville</label>
+              <input type="text" name="ville" id="ville" required />
+            </fieldset>
+            <fieldset>
+              <legend>Infotmations complémentaires</legend>
+              <label for="infos">interphone, bâtiment, etc.</label>
+              <textarea name="infos" id="" cols="25" rows="4"></textarea>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+      <div class="montant">Montant total à régler :</div>
+      <div class="button_panier">
+        <button class="button_panier1" type="submit">
+          Continuer vos achats
+        </button>
+        <button class="button_panier2" type="submit">Valider et payer</button>
+      </div>
+    </main>
+    <footer>
+      <div class="deco"></div>
+      <p>oFig - toutes les images sont sous copyright SquareEnix</p>
+    </footer>
+  </body>
+</html>

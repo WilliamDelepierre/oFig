@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 html {
@@ -14,7 +15,7 @@ html {
 body {
   font-family: "Raleway";
   position: relative;
-  height: 100%;
+  height: 100vh;
 }
 
 header {
@@ -69,7 +70,7 @@ header h2 span {
   font-style: italic;
 }
 
-main {
+.main_index {
   position: relative;
   margin: 0 auto;
   margin-top: 120px;
@@ -214,7 +215,7 @@ article:hover .cercle {
   background-color: #c80000;
   height: 110px;
   width: 30px;
-  padding-left: 10px;
+  padding-left: 5px;
   border-radius: 0 5px 5px 0;
   color: whitesmoke;
   text-align: center;
@@ -273,6 +274,7 @@ article:hover .cercle {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 footer {
   background-color: #666;
   position: static;
@@ -291,4 +293,132 @@ footer p {
   padding-bottom: 2px;
   height: 10px;
   background-image: url(images/deco.png);
+}
+
+.main_panier {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 60%;
+  min-height: 100%;
+}
+
+.panier_title {
+  font-size: 1.3rem;
+}
+
+.tableau_panier {
+  border-collapse: collapse;
+  align-self: center;
+  width: 95%;
+  height: 300px;
+  box-shadow: 3px 5px 10px rgb(209, 209, 209);
+}
+
+.formulaire {
+  border: #ccc 1px;
+  border-style: solid none;
+  width: 100%;
+  padding: 20px 0 50px 0;
+}
+
+.formulaire_title {
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+}
+
+.formulaire legend {
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.partie_gauche {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.partie_droite {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+legend {
+  color: #898989;
+  font-size: 1.1rem;
+  padding: 20px 0;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+.partie_gauche input {
+  margin: 7px 7px;
+}
+
+.partie_droite input {
+  margin-top: 5px;
+  background-color: #fafafa;
+  border-color: #dfdfdf;
+  border-style: none none solid none;
+  height: 30px;
+}
+
+.partie_droite textarea {
+  margin-top: 5px;
+  background-color: #fafafa;
+  border-color: #dfdfdf;
+  border-style: none none solid none;
+}
+
+.montant {
+  padding: 30px;
+  box-shadow: 3px 5px 10px rgb(209, 209, 209);
+  font-weight: bold;
+  border-radius: 5px;
+  align-self: center;
+  width: 95%;
+}
+
+.button_panier {
+  display: flex;
+  justify-content: space-between;
+  border: #ccc 1px;
+  border-style: solid none;
+  padding: 15px 20px;
+}
+
+.button_panier1,
+.button_panier2 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+.button_panier1 {
+  background-color: #ececec;
+}
+
+.button_panier2 {
+  background-color: #c80000;
+  color: whitesmoke;
 }
